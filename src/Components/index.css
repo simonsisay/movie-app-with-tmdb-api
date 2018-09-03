@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Tammudu');
 
 body{
-	  background-image: url(../background.jpg), 
+	  background-image: url(../images/background.jpg), 
  	  linear-gradient(-134deg,#000000 1%,#000000 97%) !important;
  	  background-size: cover;
 }
@@ -120,6 +120,10 @@ span{
 	color:#42f4c5;
 }
 
+.footer{
+	padding:15px;
+}
+
 .footer a:hover{
 	border-bottom:1px solid #42f4c5;
 }
@@ -127,6 +131,7 @@ span{
 .spinner{
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 .spinner p{

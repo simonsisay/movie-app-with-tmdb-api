@@ -27,7 +27,7 @@ class NewMovieList extends Component{
 		else {
 			return (
 				<div className="spinner">
-					<h1>Please wait...</h1>
+						<h1>Loading...</h1>
 				</div>
 			)
 		}

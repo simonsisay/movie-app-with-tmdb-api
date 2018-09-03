@@ -8,6 +8,7 @@
 			"detail detail"
 			"detail detail"
 			"detail detail"
+			"cast cast"
 			!important;
 	}
 
@@ -17,6 +18,23 @@
 	.details{
 		margin:auto;
 		grid-area: detail !important;
+	}
+
+	.cast-pics{
+		max-width: 90vw;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.casts img{
+		width:60px !important;
+		height: 60px !important;
+	}
+	.casts{
+		grid-area:cast;
 	}
 
 
@@ -49,7 +67,8 @@ body{
 		"image detail"
 		"image detail"
 		"image detail"
-		"image detail";
+		"image detail"
+		"cast cast";
 }
 
 .poster{
@@ -58,6 +77,38 @@ body{
 	justify-content: center;
 }
 
+.small-card{
+	margin-top:15px;
+}
 .details{
 	grid-area: detail
+}
+
+.casts{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	grid-area: cast;
+}
+
+.casts img{
+	border-radius:50% !important;
+	width:150px !important;
+	height: 150px !important;
+	margin:15px;
+}
+
+.cast-pics{
+	display: flex;
+	flex-direction: row;
+}
+.casts p{
+	text-align: center;
+}
+
+.spinner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

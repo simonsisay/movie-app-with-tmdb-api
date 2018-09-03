@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import img from '../download.jpeg'
 import { Card, Fa, Col } from 'mdbreact'
 import { Link } from 'react-router-dom'
-import background from '../background1.png'
 
 class MovieCard extends Component {
 	constructor(props){

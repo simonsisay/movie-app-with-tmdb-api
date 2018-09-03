@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import DetailsCard from './DetailsCard'
 import PosterCard from './PosterCard'
+import Cast from './Cast'
 import { ApiKey } from '../../config'
 import { Link } from 'react-router-dom'
 import './detail.css'
@@ -17,7 +18,8 @@ class MovieDetials extends Component{
 			genres:[],
 			overview:'',
 			poster:'',
-			releaseDate:''
+			releaseDate:'',
+			cast:[]
 		}
 	}
 
@@ -32,6 +34,9 @@ class MovieDetials extends Component{
 				poster:data.poster_path,
 				overview:data.overview,
 				releaseDate:data.release_date,
+				cast:data.credits.cast.map(cast => {
+					return {actor:cast.name, image:cast.profile_path};
+				}),
 				genres:data.genres.map(genre => {
 					return genre.name;
 				})
@@ -58,6 +63,7 @@ class MovieDetials extends Component{
 							overview={this.state.overview}
 							poster={this.state.poster}
 						/>
+						<Cast cast={this.state.cast}/>
 
 					</div>
 					<Footer />
@@ -70,7 +76,7 @@ class MovieDetials extends Component{
 				<div>
 					<Link to={'/'}><h1 className="header-detail"> Orit Movies </h1></Link>
 					<div className="spinner">
-						<h4>Please wait...</h4>
+						<h1>Loading...</h1>
 					</div>
 				</div>
 			)

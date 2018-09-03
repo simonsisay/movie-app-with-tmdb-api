@@ -5,18 +5,18 @@ import { Fa } from 'mdbreact'
 const Footer = () => {
 	return(
 		<div className="footer">
-			<h4>
+			<h5>
 				Designed and developed by 
-				<a href="https://twitter.com/sisay_simon">
+				<a href="https://twitter.com/sisay_simon" target="_blank">
 					<span> Simon Sisay <Fa icon={'twitter'} /></span>
 				</a>
-			</h4>
-			<h5>
+			</h5>
+			<p>
 				View code on
-				<a>
+				<a href="https://github.com/simonsisay/movie-app/tree/master/src" target="_blank">
 					<span> Github <Fa icon={'github'} /> </span>
 				</a> 
-			</h5>
+			</p>
 		</div>
 	)
 }
