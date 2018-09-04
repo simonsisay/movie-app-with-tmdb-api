@@ -7,7 +7,7 @@ import { ApiKey } from '../../config'
 import { Link } from 'react-router-dom'
 import './detail.css'
 import Footer from '../Footer'
-
+import spinner from '../../spinner.svg'
 
 class MovieDetials extends Component{
 	constructor(props){
@@ -23,7 +23,7 @@ class MovieDetials extends Component{
 		}
 	}
 
-	componentWillMount(){
+	componentDidMount(){
 		const movieId = this.props.match.params.id;
 		axios.get(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${ApiKey}&language=en-US&append_to_response=credits`)
 		.then( ({ data }) => {
@@ -76,7 +76,7 @@ class MovieDetials extends Component{
 				<div>
 					<Link to={'/'}><h1 className="header-detail"> Orit Movies </h1></Link>
 					<div className="spinner">
-						<h1>Loading...</h1>
+						<img src={spinner} />
 					</div>
 				</div>
 			)

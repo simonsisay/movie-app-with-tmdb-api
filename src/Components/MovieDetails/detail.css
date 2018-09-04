@@ -61,7 +61,7 @@ body{
 .movie-detail{
 	display: grid;
 	grid-gap:30px;
-	grid-template-areas: repeat(2. 1fr);
+	grid-template-areas: repeat(2, 1fr);
 	margin:20px;
 	grid-template-areas: 
 		"image detail"
@@ -81,7 +81,7 @@ body{
 	margin-top:15px;
 }
 .details{
-	grid-area: detail
+	grid-area: detail;
 }
 
 .casts{
@@ -90,6 +90,12 @@ body{
 	justify-content: center;
 	align-items: center;
 	grid-area: cast;
+}
+
+.overview{
+	display: flex;
+	flex-wrap: wrap;
+	width:auto;
 }
 
 .casts img{

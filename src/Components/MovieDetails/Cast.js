@@ -10,7 +10,7 @@ const Cast = ({cast}) => {
 				<h2>Cast</h2>
 				<div className="cast-pics">
 					{leadActors.map(actor => (
-						<div>
+						<div key={actor.actor}>
 							<img 
 								src={actor.profile_path === null ? `http://via.placeholder.com/300x450` : 
 									`https://image.tmdb.org/t/p/w200/${actor.image}`

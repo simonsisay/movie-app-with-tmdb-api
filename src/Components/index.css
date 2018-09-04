@@ -40,7 +40,6 @@ body{
 	position: relative;
 	width:70%;
 	margin:auto;
-	margin-bottom:120px;
 }
 
 .input{
@@ -49,19 +48,7 @@ body{
 	color:white !important;
 }
 
-.search-result{
-	background:rgba(0,0,0,.2);
-	border:1px solid black;
-	color:white;
-	width:80%;
-	margin:auto;
-}
 
-.found-movie{
-	padding-bottom: 6px;
-	border-bottom: .4px solid black;
-
-}
 
 .card {
 	max-width:300px;
@@ -93,6 +80,7 @@ body{
 }
 
 .card-list{
+	margin-top:130px ;
 	text-align: center;
 
 }
@@ -132,8 +120,4 @@ span{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-.spinner p{
-	font-size:24px;
 }

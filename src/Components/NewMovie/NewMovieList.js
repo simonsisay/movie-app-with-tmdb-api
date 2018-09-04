@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import MovieCard from './MovieCard'
-
+import spinner from '../../spinner.svg'
 
 class NewMovieList extends Component{
 
@@ -12,6 +12,7 @@ class NewMovieList extends Component{
 					<div className="cards">
 						{this.props.movies.map(movie => (
 								<MovieCard 
+									key={movie.id}
 									movieId={movie.id} 
 									movieImg={movie.poster_path}
 									movieTitle={movie.title}
@@ -27,7 +28,7 @@ class NewMovieList extends Component{
 		else {
 			return (
 				<div className="spinner">
-						<h1>Loading...</h1>
+						<img src={spinner} />
 				</div>
 			)
 		}

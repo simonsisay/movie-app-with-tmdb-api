@@ -8,7 +8,7 @@ const DetailsCard = ({releaseDate, rating, title, genres, overview}) => {
 			<div className="small-card">
 				<h1><span>Title : </span>{title}</h1>
 			</div>
-			<div className="small-card">
+			<div className="small-card overview">
 				<h5><span>Overview : </span>{overview}</h5>
 			</div>
 			<div className="small-card">

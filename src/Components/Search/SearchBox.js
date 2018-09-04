@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Input, Col } from 'mdbreact'
-import MovieFound from './MovieFound'
 
 
 class SearchBox extends Component {

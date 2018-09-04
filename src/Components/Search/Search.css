@@ -1,0 +1,28 @@
+.search-results-container{
+	margin:0 auto !important;
+	background:rgba(0,0,0,.2);
+	border:1px solid black;
+	color:white !important;
+}
+
+.search-results-container a{
+	color:white !important;
+}
+
+.search-result{
+	display: flex;
+	width:80%;
+	justify-content:flex-start;
+	align-items:center;
+}
+
+.search-result img{
+	width:120px !important;
+}
+
+.title-and-date{
+	padding-left:30px;
+	display: flex;
+	flex-direction: column;
+}
+

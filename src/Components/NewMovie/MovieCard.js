@@ -18,8 +18,8 @@ class MovieCard extends Component {
 	render(){
 		return(
 			<div>
-			<Link to={`/${this.props.movieId}`}>
-			  <Col sm className="card" m-2>
+			<Link to={`/movie/${this.props.movieId}`}>
+			  <Col sm className="card" >
 					<Card 
 							className="card-image" 
 							onClick={this.viewMovieDetail}
