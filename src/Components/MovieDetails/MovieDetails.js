@@ -23,7 +23,7 @@ class MovieDetials extends Component{
 		}
 	}
 
-	componentDidMount(){
+	componentWillMount(){
 		const movieId = this.props.match.params.id;
 		axios.get(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${ApiKey}&language=en-US&append_to_response=credits`)
 		.then( ({ data }) => {
@@ -48,7 +48,7 @@ class MovieDetials extends Component{
 		if(this.state.title){
 			return(
 				<div>
-					<Link to={'/'}><h1 className="header-detail"> Orit Movies </h1></Link>
+					<Link to={'/'}><h4 className="header-detail"> &larr;  Orit Movies </h4></Link>
 					<div className="movie-detail">
 
 						<PosterCard 

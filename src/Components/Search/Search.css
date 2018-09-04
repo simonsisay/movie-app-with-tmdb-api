@@ -11,9 +11,13 @@
 
 .search-result{
 	display: flex;
-	width:80%;
 	justify-content:flex-start;
 	align-items:center;
+}
+
+.search-result:hover{
+	background:#42f4c5;
+	color:black;
 }
 
 .search-result img{

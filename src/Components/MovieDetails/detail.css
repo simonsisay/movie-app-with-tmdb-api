@@ -37,6 +37,16 @@
 		grid-area:cast;
 	}
 
+	.header-detail{
+		position: fixed;
+		top:0;
+		background:linear-gradient(to right, rgba(0, 0, 0, .7), rgb(2, 15, 36));
+		
+		z-index: 2;
+		margin-top:0;
+		margin-bottom:50px;
+	}
+
 
 }
 body{
@@ -49,7 +59,7 @@ body{
 }
 
 .header-detail{
-	padding:15px 40px;
+	padding:15px 20px;
 	display: flex;
 	width:100vw;
 	color:#42f4c5 !important;
@@ -58,11 +68,16 @@ body{
 	color:white;
 }
 
+.header-detail h4{
+	font-weight:bold !important;
+}
+
+
 .movie-detail{
 	display: grid;
 	grid-gap:30px;
 	grid-template-areas: repeat(2, 1fr);
-	margin:20px;
+	margin:80px;
 	grid-template-areas: 
 		"image detail"
 		"image detail"
